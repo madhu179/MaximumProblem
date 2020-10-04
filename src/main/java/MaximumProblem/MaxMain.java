@@ -43,9 +43,13 @@ public class MaxMain <A,B,C extends Comparable>{
 	         }
 	    }
 	 E max = e[n-1];
-
+     printMax(max);
      return(max);
     }
 	
+	public <E> void printMax(E e)
+	{
+		System.out.println("The Max is "+e);
+	}
 
 }
