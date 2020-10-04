@@ -1,13 +1,14 @@
 package MaximumProblem;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Before;
 import org.junit.Test;
 
 public class MaxTest {
 	MaxMain maxMainObj;
+	
+	@Test public void Generic_Test_Max() {       
+  assertEquals(new Integer(3), new MaxMain(2,3,1).FindMaximum());
+}
 	
 	public MaxTest()
 	{
