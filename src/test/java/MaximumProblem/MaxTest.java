@@ -5,15 +5,20 @@ import org.junit.Test;
 
 public class MaxTest {
 	MaxMain maxMainObj;
-	
-	@Test public void Generic_Test_Max() {       
-  assertEquals(new Integer(3), new MaxMain(2,3,1).FindMaximum());
-}
-	
 	public MaxTest()
 	{
 		maxMainObj = new MaxMain();
 	}
+	
+	Integer[] arr = {2,3,1,4,5};
+	
+	@Test public void Generic_Test_Max() {       
+  assertEquals(new Integer(3), new MaxMain(2,3,1).FindMaximum(2,3,1));
+}
+	
+	@Test public void Generic_Test_Array_Max() {       
+  assertEquals(new Integer(5), new MaxMain().FindMaximum(arr));
+}
 	
 	@Test public void Integer_Test_Max_at_Position1() {       
         assertEquals(new Integer(3), maxMainObj.FindMaximum(3,2,1));
