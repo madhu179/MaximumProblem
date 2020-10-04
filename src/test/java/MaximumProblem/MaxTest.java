@@ -37,5 +37,17 @@ public class MaxTest {
 	@Test public void Float_Test_Max_at_Position3() {       
         assertEquals(new Float(3), maxMainObj.FindMaximum(1f,2f,3f));
     }
+	
+	@Test public void String_Test_Max_at_Position1() {       
+        assertEquals("Peach", maxMainObj.FindMaximum("Peach","Banana","Apple"));
+    }
+	
+	@Test public void String_Test_Max_at_Position2() {       
+        assertEquals("Peach", maxMainObj.FindMaximum("Banana","Peach","Apple"));
+    }
+	
+	@Test public void String_Test_Max_at_Position3() {       
+        assertEquals("Peach", maxMainObj.FindMaximum("Apple","Banana","Peach"));
+    }
 
 }
